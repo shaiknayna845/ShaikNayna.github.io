@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nayna</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    
+
+
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+            <img src="images/Screenshot (35).png" alt="" height="50px" width="auto" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa fa-times" aria-hidden="true" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa fa-bars" aria-hidden="true" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Tech Enthusiastic</p>
+            <h1>Hi, I'm <span>Shaik Nayna </span>  <br>from Hyderabad currently pursuing <br> my Btech in Computer Science and Engineering in <br>Sreenidhi Institute of Science and Technology</h1>
+        </div>
+      </div>
+    </div>
+    <!----about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/2ndimg.png" alt="" height="450px" width="auto">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsam, delectus perspiciatis officiis impedit quisquam quis, harum reprehenderit repudiandae eos atque iste magni eum aliquid. Eveniet nam nulla obcaecati incidunt?</p>
+
+                    <div class="tab-titles">
+                        
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>Jul 2022 - Sep 2022</span><br>AWS Cloud Virtual Internship</li>
+                            <li><span>Dec 2022 - Feb 2023 </span><br>AWS AI-ML Internship</li>
+                            <li><span>2022</span><br>The PenShine Website</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>Btech | Sreenidhi Institute of Science and Technology</li>
+                            <li><span>2018-2020</span><br>Intermediate | Sri Chaitanya Junior College</li>
+                            <li><span>2018</span><br>SSC | Triveni Talent School</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----skillls---------->
+    <div id="skills">
+        
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <img src="images/clog.png" alt="" class="skillslogos">
+            <img src="images/c++lo.png" alt="" class="skillslogos" >
+                <img src="images/javalo.png" alt="" class="skillslogos">
+                <img src="images/pythonlo.png" alt="" class="skillslogos">
+                <img src="images/htmllog.png" alt="" class="skillslogos">
+                <img src="images/csslogo.png" alt="" class="skillslogos">
+                <img src="images/jslog.png" alt="" class="skillslogos">
+                <img src="images/sqllog.png" alt="" class="skillslogos">
+            </div>
+        </div>
+    </div>
+
+    <!-----Work----->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/tpsswork.png" alt="">
+                    <div class="layer">
+                        <h3>ThePenShine Website</h3>
+                        <p>All unique writings,poems and quotes at 1 place.Users can also fill the form and get personalized writinngs by writer of ThePenShine</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="images/hkwork.png" alt="">
+                <div class="layer">
+                    <h3>5 Star in HackerRank</h3>
+                    <p>Secured gold badges and several other badges in HackerRank platform</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+<!----------contact-------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa fa-paper-plane" aria-hidden="true"></i> shaiknayna294@gmail.com</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> 8978312845</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href=""><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+                <a href="images/Nayna resume may11.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form  name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Shaik Nayna</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+    {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0"
+    }
+    function closemenu(){
+        sidemenu.style.right="-250px"
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx0DuvG-dr-lknmDrtoXTi_0TzcTNp7pdPjPVcXtgRCa7EHa0ZaPmz_493SE1dFtdGc/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script
+</body>
+</html>
